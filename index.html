@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#131733" /><meta name="description" content="Northstar account access." />
+  <title>Northstar — Account access</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" /><script src="app.js" defer></script>
+</head>
+<body>
+<main class="auth-shell">
+  <aside class="brand-panel" aria-label="Northstar introduction">
+    <div class="orb orb-one"></div><div class="orb orb-two"></div><div class="orb orb-three"></div><div class="dot-grid" aria-hidden="true"></div>
+    <a class="brand" href="#login" aria-label="Northstar home"><span class="brand-mark">N</span><span class="brand-copy"><strong>NORTHSTAR</strong><small>A clearer way to move forward.</small></span></a>
+    <div class="hero-copy"><p class="eyebrow">YOUR WORKSPACE, CONNECTED</p><h1>Everything you need.<br />One secure place.</h1><p class="hero-description">Sign in to pick up where you left off, collaborate with your team, and keep your work moving.</p><p class="trust-note"><span aria-hidden="true">✦</span> Thoughtfully designed for your everyday work</p></div>
+  </aside>
+  <section class="content-panel">
+    <p class="top-note">Already trusted by teams who build.</p>
+    <div class="form-card" id="auth-card" aria-live="polite">
+      <section class="auth-view" id="login-view" aria-labelledby="login-title">
+        <p class="form-eyebrow">WELCOME BACK</p><h2 id="login-title">Welcome back</h2><p class="form-subtitle">Sign in to your account to continue.</p>
+        <form id="login-form" novalidate>
+          <label class="field"><span>Email address</span><input type="email" name="email" placeholder="you@example.com" autocomplete="email" required /></label>
+          <label class="field"><span>Password</span><span class="password-wrap"><input type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required minlength="8" /><button class="toggle-password" type="button" aria-label="Show password">Show</button></span></label>
+          <div class="form-row"><label class="check-label"><input type="checkbox" name="remember" /> <span>Remember me</span></label><a href="#forgot" class="text-link" data-view="forgot">Forgot password?</a></div>
+          <button class="primary-button" type="submit">Sign in</button>
+        </form>
+        <div class="divider"><span>OR CONTINUE WITH</span></div><div class="social-row"><button class="social-button" type="button" data-social="Google">Google</button><button class="social-button" type="button" data-social="Apple">Apple</button></div>
+        <p class="switch-copy">New to Northstar? <a href="#register" class="text-link" data-view="register">Create an account</a></p>
+      </section>
+      <section class="auth-view" id="register-view" aria-labelledby="register-title" hidden>
+        <p class="form-eyebrow">GET STARTED</p><h2 id="register-title">Create your account</h2><p class="form-subtitle">Start building better work, together.</p>
+        <form id="register-form" novalidate>
+          <label class="field"><span>Full name</span><input type="text" name="name" placeholder="Your name" autocomplete="name" required /></label>
+          <label class="field"><span>Work email</span><input type="email" name="email" placeholder="you@company.com" autocomplete="email" required /></label>
+          <label class="field"><span>Password</span><span class="password-wrap"><input type="password" name="password" placeholder="Create a strong password" autocomplete="new-password" minlength="8" required /><button class="toggle-password" type="button" aria-label="Show password">Show</button></span></label>
+          <p class="field-hint">Use at least 8 characters, including a number.</p>
+          <label class="check-label terms-check"><input type="checkbox" name="terms" required /> <span>I agree to the <a href="#terms" class="text-link inline-link">Terms of Service</a> and <a href="#privacy" class="text-link inline-link">Privacy Policy</a>.</span></label>
+          <button class="primary-button" type="submit">Create account</button>
+        </form><p class="switch-copy">Already have an account? <a href="#login" class="text-link" data-view="login">Sign in</a></p>
+      </section>
+      <section class="auth-view" id="forgot-view" aria-labelledby="forgot-title" hidden>
+        <p class="form-eyebrow">ACCOUNT RECOVERY</p><h2 id="forgot-title">Forgot your password?</h2><p class="form-subtitle">No worries. We’ll help you get back in.</p>
+        <form id="forgot-form" novalidate>
+          <label class="field"><span>Email address</span><input type="email" name="email" placeholder="you@example.com" autocomplete="email" required /></label>
+          <p class="recovery-copy">Enter the email address linked to your account. We’ll send you a secure link to reset your password.</p>
+          <button class="primary-button" type="submit">Send reset link</button>
+        </form><p class="switch-copy"><a href="#login" class="text-link" data-view="login">← &nbsp;Back to sign in</a></p>
+        <div class="security-note"><strong>Your account stays protected</strong><span>For your security, reset links expire after a short time.</span></div>
+      </section>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <footer>© 2026 Northstar <span>·</span> <a href="#privacy">Privacy</a> <span>·</span> <a href="#terms">Terms</a></footer>
+  </section>
+</main>
+</body></html>
