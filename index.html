@@ -49,6 +49,13 @@
         </form><p class="switch-copy"><a href="#login" class="text-link" data-view="login">← &nbsp;Back to sign in</a></p>
         <div class="security-note"><strong>Your account stays protected</strong><span>For your security, reset links expire after a short time.</span></div>
       </section>
+      <section class="auth-view" id="reset-view" aria-labelledby="reset-title" hidden>
+        <p class="form-eyebrow">SECURE YOUR ACCOUNT</p><h2 id="reset-title">Choose a new password</h2><p class="form-subtitle">Create a new password for your Northstar account.</p>
+        <form id="reset-form" novalidate><input type="hidden" id="reset-token" name="token" />
+          <label class="field"><span>New password</span><span class="password-wrap"><input type="password" name="password" placeholder="At least 8 characters and a number" autocomplete="new-password" minlength="8" required /><button class="toggle-password" type="button" aria-label="Show password">Show</button></span></label>
+          <button class="primary-button" type="submit">Update password</button>
+        </form><p class="switch-copy"><a href="#login" class="text-link" data-view="login">← &nbsp;Back to sign in</a></p>
+      </section>
       <div class="toast" id="toast" role="status" aria-live="polite"></div>
     </div>
     <footer>© 2026 Northstar <span>·</span> <a href="#privacy">Privacy</a> <span>·</span> <a href="#terms">Terms</a></footer>
